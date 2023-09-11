@@ -1,0 +1,9 @@
+Sub HapusRecentFiles()
+
+	'KakTutor 2023-11-09
+On Error Resume Next
+	Do Until Err.Number <> 0
+	Application.RecentFiles.Item(1).Delete
+	Loop
+
+End Sub
